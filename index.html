@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav>
+    <h2>MyWebsite</h2>
+    <div   style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; background-color: rgb(0, 0, 0); height: 60px; display: flex; align-items: center; justify-content: center; gap: 20px;font-size: 20px;">
+      <a href="login.html" style="color: rgb(255, 255, 255);" >Login</a>
+      <a href="signup.html" style="color: rgb(255, 255, 255);" >Signup</a>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="image/img1.jpg">
+      <div class="card-content">
+        <h3>Modern Home</h3>
+        <p>
+          This modern home design offers a perfect blend of comfort and style.
+          It includes spacious rooms, parking, and garden space.
+          Designed for natural light and ventilation.
+          Ideal for families who want a clean and elegant lifestyle.
+          Architecture focuses on simplicity and beauty.
+        </p>
+        <button onclick="like(this)">❤️ Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/img2.jpg">
+      <div class="card-content">
+        <h3>Luxury Villa</h3>
+        <p>
+          A luxury villa with modern interior and premium design.
+          Includes pool, large rooms, and stylish finishing.
+          Built using high-quality materials.
+          Perfect for high-end lifestyle living.
+          Combines comfort with elegance beautifully.
+        </p>
+        <button onclick="like(this)">❤️ Like</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/img3.jpg">
+      <div class="card-content">
+        <h3>Simple House</h3>
+        <p>
+          A budget-friendly home design for small families.
+          Smart use of space with all basic facilities.
+          Easy to build and maintain.
+          Clean layout with minimal design.
+          Suitable for urban and rural areas.
+        </p>
+        <button onclick="like(this)">❤️ Like</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function like(btn) {
+      btn.innerText = btn.innerText === "❤️ Like" ? "💖 Liked" : "❤️ Like";
+    }
+  </script>
+  <script src="script.js"></script>
+
+</body>
+</html>
